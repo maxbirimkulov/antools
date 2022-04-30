@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    background: #1E252B;
+}
+
+
+.container{
+    width: 100%;
+    max-width: 1264px;
+    padding: 0 20px;
+    margin: 0 auto;
+
+}
+
+
+.logo{
+    display: flex;
+    column-gap: 12px;
+    align-items: center;
+}
+.btn{
+    border: none;
+    background: transparent;
+    font-family: 'Poppins',sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 0.78);
+    cursor: pointer;
+    padding: 12px 28px;
+    border-radius: 8px;
+    transition: .3s;
+    &:hover{
+        transition: .3s;
+        background: #FF6E30;
+        color: #FDF5FF;
+    }
+}
+.home{
+    padding: 104px 0 168px;
+    position: relative;
+    &::before{
+        content: url("../images/home/homebg.png");
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+}
+.title{
+    font-family: 'Poppins',sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 140%;
+    color: rgba(255, 255, 255, 0.9);
+    &_left{
+        margin-bottom: 30px;
+    }
+    &_center{
+        text-align: center;
+        margin-bottom: 25px;
+    }
+}
+.subtitle{
+    font-family: 'Poppins',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: rgba(255, 255, 255, 0.55);
+    &_left{
+        margin-bottom: 60px;
+    }
+    &_center{
+        text-align: center;
+    }
+}
+.form{
+    width: 100%;
+    max-width: 497.66px;
+    position: relative;
+    &__field{
+        width: 100%;
+        height: 64px;
+        background: #283036;
+        border-radius: 15px;
+        border: none;
+        padding-left: 55px;
+        color: white;
+        font-size: 18px;
+        appearance: none;
+    }
+    &__search{
+        position: absolute;
+        top: 20px;
+        left: 18px;
+    }
+}
+.button{
+    background: #FF6E30;
+    border-radius: 8px;
+    font-family: 'Poppins',sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    cursor: pointer;
+    color: #FFFFFF;
+    border: none;
+    &_form{
+        padding: 12px  36px;
+        position: absolute;
+        top: 8px;
+        right: 11px;
+    }
+    &_popup{
+        padding: 13px 0;
+        width: 100%;
+        margin: 29px 0 25px;
+    }
+
+}
+.overlay{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: rgba(25, 25, 25, 0.4);
+    backdrop-filter: blur(32px);
+    justify-content: center;
+    align-items: center;
+    display: none;
+    &_active{
+        display: flex;
+    }
+}
+
+@import "./header";
+
+@import "./tools";
+
+@import "./popup";
+
+@import "brand";
+
+@import "./newcomer";
+
+@import "slider";
+
+@import "become";
+
+@import "footer";
+
+@import "tabs";
+
+
+.goTop{
+    position: fixed;
+    bottom: 150px;
+    right: 40px;
+    background: red;
+    color: white;
+    padding: 15px;
+    z-index: -10;
+    opacity: 0;
+    transition: 1s;
+    &_active{
+        transition: 1s;
+        opacity: 100;
+        z-index: 100;
+    }
+}
+
+.radio{
+    background: green;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

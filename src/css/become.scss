@@ -1,0 +1,47 @@
+.become {
+  padding-bottom: 240px;
+  &__title {
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 130%;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.9);
+  }
+  &__text {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.55);
+    margin: 25px 0 100px;
+  }
+  &__parent {
+    width: 549px;
+    position: relative;
+    margin: 0 auto;
+  }
+  &__input {
+    width: 100%;
+    height: 64px;
+    background: #283036;
+    border-radius: 15px;
+    border: none;
+    padding-left: 24px;
+  }
+  &__btn {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    width: 130.43px;
+    height: 48px;
+    background: #FF6E30;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+  }
+}

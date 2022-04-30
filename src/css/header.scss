@@ -1,0 +1,133 @@
+.header{
+  padding-top: 31px;
+  position: relative;
+  &__nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__right{
+    display: flex;
+    column-gap: 130px;
+  }
+
+  &__list{
+    display: flex;
+    column-gap: 40px;
+    align-items: center;
+  }
+  &__btns{
+    display: flex;
+  }
+  &__link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 0.55);
+  }
+
+  .burger{
+    display: none;
+    position: absolute;
+    height: 40px;
+    top: 35px;
+    right: 20px;
+    align-items: center;
+    &__line{
+      width: 40px;
+      height: 2px;
+      position: relative;
+      background: white;
+      &::before{
+        content: '';
+        width: 40px;
+        height: 2px;
+        position: absolute;
+        top: -10px;
+        left: 0;
+        background: white;
+      }
+      &::after{
+        content: '';
+        width: 40px;
+        height: 2px;
+        position: absolute;
+        top: 10px;
+        left: 0;
+        background: white;
+      }
+    }
+  }
+
+}
+.logo__title {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 33px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+@media (max-width: 1200px) {
+  .header{
+    &__right{
+      column-gap: 90px;
+    }
+  }
+}
+
+
+@media (max-width: 992px) {
+ .header{
+   .burger{
+     display: flex;
+     z-index: 51;
+     &_active{
+       .burger__line{
+         background: transparent;
+         &::before{
+           top: 0;
+           transform: rotate(45deg);
+           background: black;
+         }
+         &::after{
+           top: 0;
+           transform: rotate(-45deg);
+           background: black;
+         }
+       }
+     }
+   }
+   &__right{
+     opacity: 0;
+     transition: 1s;
+     display: flex;
+     position: absolute;
+     flex-direction: column;
+     top: 0;
+     right: 0;
+     transform: translateX(100%);
+     padding: 50px 100px;
+     background: gray;
+     row-gap: 40px;
+     z-index: 50;
+     border-bottom-left-radius: 20px ;
+     .header__list{
+       flex-direction: column;
+       row-gap: 15px;
+     }
+     .header__btns{
+       flex-direction: column;
+       row-gap: 15px;
+     }
+     &_active{
+       transition: 1s;
+       opacity: 100;
+
+       transform: translateX(0);
+
+
+     }
+
+   }
+ }
+}

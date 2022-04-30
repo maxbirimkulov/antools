@@ -1,0 +1,39 @@
+.footer {
+  padding: 70px 0 100px;
+  &__nav {
+    display: flex;
+    column-gap: 156px;
+  }
+  &__right {
+    display: flex;
+    column-gap: 115px;
+    &-type {
+      margin-bottom: 20px;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 30px;
+      color: rgba(255, 255, 255, 0.9);
+    }
+    &-item {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      color: rgba(255, 255, 255, 0.55);
+      margin-bottom: 10px;
+    }
+  }
+  &__title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 0.9);
+    margin: 34px 0 21px;
+  }
+  &__subtitle {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 25px;
+    color: rgba(255, 255, 255, 0.55);
+  }
+
+}

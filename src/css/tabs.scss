@@ -1,0 +1,21 @@
+.tabs{
+  background: white;
+  padding: 80px 0;
+  &__list{
+    display: flex;
+    column-gap: 50px;
+    justify-content: center;
+    cursor: pointer;
+  }
+  &__item{
+    &_active{
+      color: gold;
+    }
+  }
+  &__content{
+    display: none;
+    &_active{
+      display: block;
+    }
+  }
+}
