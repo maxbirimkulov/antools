@@ -188,11 +188,24 @@ body{
 }
 
 
+.romb{
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border: 1px solid white;
+    transform: rotate(-45deg) skew(-30deg);
+}
 
 
 
 
 
+.telegram:hover svg{
+    fill: green;
+}
 
 
 
